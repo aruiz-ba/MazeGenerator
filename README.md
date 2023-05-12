@@ -19,7 +19,7 @@ This algorithm is used to solve problems such as mazes and Sudokus. In summary, 
 
 ## Randomized Depth-First Search
 
-![backtrack_maze_creation](https://github.com/aruiz-ba/MazeGenerator/assets/46310231/def0c9b8-8dd9-4c35-95e8-5c81c6866083)
+<img src="https://github.com/aruiz-ba/MazeGenerator/assets/46310231/def0c9b8-8dd9-4c35-95e8-5c81c6866083" width="500" height="500">
 
 This approach is one of the simplest ways to generate a maze using a computer. Let's consider that the space for the maze is a large grid of cells (like a large chessboard) and that each cell starts with four walls. Starting from a random cell, the computer selects a random neighboring cell that has not been visited yet. The computer removes the wall between the two cells, marks the new cell as visited, and adds it to the stack for backtracking. The computer continues this process, and a cell that has no unvisited neighbors is considered a dead end. When it finds itself in a dead end, it backtracks along the path until it reaches a cell with an unvisited neighbor, and it continues the path generation by visiting this new unvisited cell (creating a new junction). This process continues until all cells have been visited, making the computer backtrack all the way to the initial cell. We can be sure that all cells have been visited.
 
